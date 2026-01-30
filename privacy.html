@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="ko">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>개인정보처리방침 - BCPS</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@100;400;700;900&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#82C91E",
+                        "background-light": "#F8F9FA",
+                        "background-dark": "#0A0A0A",
+                    },
+                    fontFamily: {
+                        sans: ["Pretendard", "sans-serif"],
+                    },
+                },
+            },
+        };
+    </script>
+    <style>
+        body {
+            scroll-behavior: smooth;
+        }
+        .sidebar-link {
+            display: block;
+            padding: 0.5rem 1rem;
+            color: #64748b;
+            transition: all 0.2s;
+            border-radius: 0.375rem;
+            font-size: 0.875rem;
+        }
+        .sidebar-link:hover {
+            color: #82C91E;
+            background-color: #f1f5f9;
+        }
+        .sidebar-link.active {
+            color: #82C91E;
+            font-weight: 700;
+            background-color: #f1f5f9;
+        }
+        .content-section {
+            margin-bottom: 3rem;
+        }
+        .content-section h2 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            color: #1e293b;
+        }
+        .content-section h3 {
+            font-size: 1.125rem;
+            font-weight: 600;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+            color: #334155;
+        }
+        .content-section p, .content-section li {
+            line-height: 1.8;
+            color: #475569;
+            margin-bottom: 0.75rem;
+        }
+        .content-section ul {
+            margin-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        .content-section li {
+            margin-bottom: 0.5rem;
+        }
+        .info-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+        }
+        .info-table th,
+        .info-table td {
+            border: 1px solid #e2e8f0;
+            padding: 0.75rem 1rem;
+            text-align: left;
+        }
+        .info-table th {
+            background-color: #f8fafc;
+            font-weight: 600;
+            color: #334155;
+        }
+        .info-table td {
+            color: #475569;
+        }
+        @media (max-width: 1024px) {
+            .sidebar {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-background-light text-slate-900 font-sans">
+
+    <!-- Navigation -->
+    <nav class="bg-white border-b border-slate-200 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="index.html" class="flex items-center">
+                <img src="assets/green_all.png" alt="BCPS Logo" class="h-8">
+            </a>
+        </div>
+    </nav>
+
+    <div class="max-w-7xl mx-auto px-6 py-12">
+        <!-- Page Title -->
+        <div class="mb-12">
+            <h1 class="text-4xl font-bold mb-4">개인정보처리방침</h1>
+            <p class="text-slate-500">BCPS 서비스 이용을 위한 상세한 규정을 확인하세요.</p>
+        </div>
+
+        <div class="flex gap-12">
+            <!-- Sidebar -->
+            <aside class="sidebar w-64 flex-shrink-0">
+                <nav class="sticky top-24 space-y-1">
+                    <a href="#section1" class="sidebar-link active">제1장 총칙</a>
+                    <a href="#section2" class="sidebar-link">제2장 수집하는 개인정보의 항목 및 방법</a>
+                    <a href="#section3" class="sidebar-link">제3장 개인정보의 수집 및 이용 목적</a>
+                    <a href="#section4" class="sidebar-link">제4장 개인정보의 제공</a>
+                    <a href="#section5" class="sidebar-link">제5장 개인정보의 보유 및 이용 기간</a>
+                    <a href="#section6" class="sidebar-link">제6장 개인정보의 파기 절차 및 방법</a>
+                    <a href="#section7" class="sidebar-link">제7장 이용자의 권리와 행사 방법</a>
+                    <a href="#section8" class="sidebar-link">제8장 개인정보의 안전성 확보 조치</a>
+                    <a href="#section9" class="sidebar-link">제9장 위치기반 개인정보 처리</a>
+                    <a href="#section10" class="sidebar-link">제10장 개인정보 보호책임자</a>
+                    <a href="#section11" class="sidebar-link">제11장 개인정보처리방침의 변경</a>
+                </nav>
+            </aside>
+
+            <!-- Main Content -->
+            <main class="flex-1 max-w-3xl">
+                
+                <!-- 제1장 총칙 -->
+                <section id="section1" class="content-section">
+                    <h2>제1장 총칙</h2>
+                    
+                    <h3>제1조 (목적)</h3>
+                    <p>본 개인정보처리방침은 BCPS(이하 "회사")가 제공하는 서비스 이용과 관련하여, 이용자의 개인정보를 보호하고 「개인정보 보호법」 등 관련 법령을 준수함에 있어 개인정보의 수집·이용·보관·파기 등에 관한 사항을 규정함을 목적으로 합니다.</p>
+
+                    <h3>제2조 (적용 범위)</h3>
+                    <p>본 방침은 회사가 제공하는 모든 서비스에 적용됩니다.</p>
+                </section>
+
+                <!-- 제2장 수집하는 개인정보의 항목 및 방법 -->
+                <section id="section2" class="content-section">
+                    <h2>제2장 수집하는 개인정보의 항목 및 방법</h2>
+                    
+                    <h3>제3조 (수집하는 개인정보 항목)</h3>
+                    <p>회사는 다음과 같은 개인정보를 수집할 수 있습니다.</p>
+
+                    <h4 style="font-weight: 600; margin-top: 1rem; margin-bottom: 0.5rem;">회원가입 시</h4>
+                    <ul>
+                        <li>소셜 로그인 ID (카카오, Google, Apple 등 외부 플랫폼에서 제공하는 고유 식별자)</li>
+                        <li>프로필 정보 (닉네임, 이메일 등 제공 범위 내 정보)</li>
+                    </ul>
+
+                    <h4 style="font-weight: 600; margin-top: 1rem; margin-bottom: 0.5rem;">서비스 이용 중 자동 수집</h4>
+                    <ul>
+                        <li>기기 정보(OS, 모델명, 광고 ID 등)</li>
+                        <li>IP 주소, 접속 로그</li>
+                        <li>서비스 이용 기록</li>
+                    </ul>
+
+                    <h4 style="font-weight: 600; margin-top: 1rem; margin-bottom: 0.5rem;">콘텐츠 업로드 시</h4>
+                    <ul>
+                        <li>사진 이미지 파일</li>
+                        <li>리뷰 및 텍스트 콘텐츠</li>
+                    </ul>
+
+                    <h4 style="font-weight: 600; margin-top: 1rem; margin-bottom: 0.5rem;">선택적 수집 항목(동의 시)</h4>
+                    <ul>
+                        <li>GPS 기반 위치 정보</li>
+                    </ul>
+
+                    <h3>제4조 (개인정보 수집 방법)</h3>
+                    <p>개인정보는 다음과 같은 방법으로 수집됩니다.</p>
+                    <ul>
+                        <li>회원가입 및 서비스 이용 과정에서 이용자가 직접 입력</li>
+                        <li>서비스 이용 과정에서 자동 수집</li>
+                    </ul>
+                </section>
+
+                <!-- 제3장 개인정보의 수집 및 이용 목적 -->
+                <section id="section3" class="content-section">
+                    <h2>제3장 개인정보의 수집 및 이용 목적</h2>
+                    
+                    <h3>제5조 (개인정보의 이용 목적)</h3>
+                    <p>회사는 수집한 개인정보를 다음의 목적을 위해 이용합니다.</p>
+                    <ul>
+                        <li>회원 식별 및 로그인 인증</li>
+                        <li>기념품 추천, 카테고리·가격 필터링 등 맞춤형 서비스 제공</li>
+                        <li>기념품 업로드 및 관리 기능 제공</li>
+                        <li>서비스 품질 개선 및 통계 분석</li>
+                        <li>부정 이용 행위 방지</li>
+                        <li>관련 법령 준수 및 고지 사항 전달</li>
+                    </ul>
+                </section>
+
+                <!-- 제4장 개인정보의 제공 -->
+                <section id="section4" class="content-section">
+                    <h2>제4장 개인정보의 제공</h2>
+                    
+                    <h3>제6조 (개인정보의 제3자 제공)</h3>
+                    <p>회사는 이용자의 개인정보를 원칙적으로 제3자에게 제공하지 않습니다. 다만, 다음 각 호의 경우에는 예외로 합니다.</p>
+                    <ul>
+                        <li>법령에 따라 제공이 요구되는 경우</li>
+                        <li>통계 작성, 학술 연구 등의 목적을 위해 개인을 식별할 수 없도록 가공된 정보를 제공하는 경우</li>
+                    </ul>
+                </section>
+
+                <!-- 제5장 개인정보의 보유 및 이용 기간 -->
+                <section id="section5" class="content-section">
+                    <h2>제5장 개인정보의 보유 및 이용 기간</h2>
+                    
+                    <h3>제7조 (보유 및 이용 기간)</h3>
+                    <p>회원 탈퇴 시 개인정보는 탈퇴 후 30일 이내 파기합니다.</p>
+                    <p>단, 관련 법령에 따라 다음 정보는 일정 기간 보관합니다.</p>
+
+                    <table class="info-table">
+                        <thead>
+                            <tr>
+                                <th>항목</th>
+                                <th>보관 기간</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>서비스 이용 기록</td>
+                                <td>3개월</td>
+                            </tr>
+                            <tr>
+                                <td>접속 로그 및 IP 주소</td>
+                                <td>3개월</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <!-- 제6장 개인정보의 파기 절차 및 방법 -->
+                <section id="section6" class="content-section">
+                    <h2>제6장 개인정보의 파기 절차 및 방법</h2>
+                    
+                    <h3>제8조 (파기 절차)</h3>
+                    <p>개인정보는 수집 및 이용 목적이 달성된 후 지체 없이 파기합니다.</p>
+
+                    <h3>제9조 (파기 방법)</h3>
+                    <ul>
+                        <li>전자적 파일 형태: 복구 불가능한 기술적 방법으로 삭제</li>
+                        <li>종이 문서 형태: 분쇄 또는 소각</li>
+                    </ul>
+                </section>
+
+                <!-- 제7장 이용자의 권리와 행사 방법 -->
+                <section id="section7" class="content-section">
+                    <h2>제7장 이용자의 권리와 행사 방법</h2>
+                    
+                    <h3>제10조 (이용자의 권리)</h3>
+                    <p>이용자는 언제든지 다음과 같은 권리를 행사할 수 있습니다.</p>
+                    <ul>
+                        <li>개인정보 열람, 정정, 삭제 요청</li>
+                        <li>위치정보 수집 및 이용 동의 철회</li>
+                        <li>회원 탈퇴 및 개인정보 파기 요청</li>
+                    </ul>
+
+                    <h3>제11조 (권리 행사 방법)</h3>
+                    <p>이용자의 권리 행사는 서비스 내 설정 또는 고객센터를 통해 가능합니다.</p>
+                </section>
+
+                <!-- 제8장 개인정보의 안전성 확보 조치 -->
+                <section id="section8" class="content-section">
+                    <h2>제8장 개인정보의 안전성 확보 조치</h2>
+                    
+                    <h3>제12조 (안전성 확보 조치)</h3>
+                    <p>회사는 개인정보 보호를 위해 다음과 같은 조치를 취하고 있습니다.</p>
+                    <ul>
+                        <li>개인정보 암호화 저장</li>
+                        <li>접근 권한 통제 및 내부 보안 시스템 운영</li>
+                        <li>개인정보 최소 수집 및 분리 보관</li>
+                        <li>정기적인 보안 점검</li>
+                    </ul>
+                </section>
+
+                <!-- 제9장 위치기반 개인정보 처리 -->
+                <section id="section9" class="content-section">
+                    <h2>제9장 위치기반 개인정보 처리</h2>
+                    
+                    <h3>제13조 (위치정보의 처리)</h3>
+                    <p>회사는 위치 기반 추천 기능 제공을 위해 위치 정보를 수집·이용할 수 있으며, 해당 정보는 서비스 제공 목적 외 용도로 사용되지 않습니다.</p>
+                    <p>이용자는 언제든지 위치 정보 수집에 대한 동의를 거부할 수 있습니다.</p>
+                </section>
+
+                <!-- 제10장 개인정보 보호책임자 -->
+                <section id="section10" class="content-section">
+                    <h2>제10장 개인정보 보호책임자</h2>
+                    
+                    <h3>제14조 (개인정보 보호책임자)</h3>
+                    <ul>
+                        <li>담당자: 안가연, 김진범</li>
+                        <li>문의 이메일: team.sou.zip@gmail.com</li>
+                        <li>문의 방법: 앱 내 문의 기능</li>
+                    </ul>
+                </section>
+
+                <!-- 제11장 개인정보처리방침의 변경 -->
+                <section id="section11" class="content-section">
+                    <h2>제11장 개인정보처리방침의 변경</h2>
+                    
+                    <h3>제15조 (개정 고지)</h3>
+                    <p>본 개인정보처리방침의 내용이 추가·삭제·수정될 경우 앱 공지 또는 팝업을 통해 사전 공지합니다.</p>
+                    <p>다만, 수집 항목 또는 이용 목적 변경 등 이용자 권리에 중대한 영향을 미치는 경우에는 최소 30일 이전에 공지하며, 필요 시 이용자의 동의를 다시 받을 수 있습니다.</p>
+                </section>
+
+                <!-- Dates Section -->
+                <div class="mt-8 p-6 bg-slate-50 rounded-lg border border-slate-200">
+                    <p class="text-sm text-slate-600 mb-2">공고일자: 2026년 01월 04일</p>
+                    <p class="text-sm text-slate-600">시행일자: 2026년 01월 12일</p>
+                </div>
+
+            </main>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-slate-100 py-24 px-6 mt-24">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-12">
+            <div class="flex flex-col items-center md:items-start">
+                <img src="assets/green_all.png" alt="BCPS Logo" style="height: 60px; width: auto; margin-bottom: 16px;">
+                <p class="text-slate-400 text-lg font-medium">사업자 등록번호 : 675-38-01539 | 대표 : 조예근</p>
+            </div>
+            <div class="flex flex-col items-center md:items-end text-center md:text-right gap-8">
+                <nav class="flex gap-12 text-sm font-bold text-slate-500">
+                    <a class="hover:text-primary transition-colors" href="terms.html">이용약관</a>
+                    <a class="hover:text-primary transition-colors" href="privacy.html">개인정보처리방침</a>
+                </nav>
+                <p class="text-slate-400 text-sm">
+                    © 2026 BCPS. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Sidebar active link highlighting on scroll
+        const sections = document.querySelectorAll('.content-section');
+        const navLinks = document.querySelectorAll('.sidebar-link');
+
+        function updateActiveLink() {
+            let currentSection = '';
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (window.pageYOffset >= sectionTop - 100) {
+                    currentSection = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + currentSection) {
+                    link.classList.add('active');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', updateActiveLink);
+        updateActiveLink();
+    </script>
+
+</body>
+
+</html>

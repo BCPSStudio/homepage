@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="ko">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>404 - 페이지를 찾을 수 없습니다 | BCPS</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@100;400;700;900&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#82C91E",
+                        "background-light": "#F8F9FA",
+                        "background-dark": "#0A0A0A",
+                    },
+                    fontFamily: {
+                        sans: ["Pretendard", "sans-serif"],
+                    },
+                },
+            },
+        };
+    </script>
+    <style>
+        body {
+            scroll-behavior: smooth;
+        }
+        .hero-gradient {
+            background: radial-gradient(circle at center, rgba(130, 201, 30, 0.08) 0%, transparent 70%);
+        }
+        .error-number {
+            font-size: 12rem;
+            font-weight: 900;
+            line-height: 1;
+            background: linear-gradient(135deg, #82C91E 0%, #5a8e15 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        @media (max-width: 768px) {
+            .error-number {
+                font-size: 8rem;
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-background-light text-slate-900 font-sans">
+
+    <!-- Navigation -->
+    <nav class="bg-white border-b border-slate-200 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="index.html" class="flex items-center">
+                <img src="assets/green_all.png" alt="BCPS Logo" class="h-8">
+            </a>
+        </div>
+    </nav>
+
+    <!-- 404 Content -->
+    <main class="min-h-screen flex items-center justify-center px-6 py-24 hero-gradient">
+        <div class="max-w-3xl mx-auto text-center">
+            <!-- 404 Number -->
+            <div class="error-number mb-8">404</div>
+            
+            <!-- Title and Description -->
+            <h1 class="text-4xl md:text-5xl font-bold mb-6 text-slate-900">
+                페이지를 찾을 수 없습니다
+            </h1>
+            <p class="text-xl text-slate-600 mb-12 leading-relaxed">
+                요청하신 페이지가 존재하지 않거나 이동되었습니다.<br />
+                주소를 다시 확인해 주세요.
+            </p>
+
+            <!-- Action Buttons -->
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <a href="index.html" 
+                   class="inline-flex items-center gap-2 px-8 py-4 bg-primary text-white font-bold rounded-xl hover:bg-[#6ba319] transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105">
+                    <span class="material-symbols-outlined">home</span>
+                    홈으로 돌아가기
+                </a>
+                <button onclick="history.back()" 
+                        class="inline-flex items-center gap-2 px-8 py-4 bg-white text-slate-700 font-bold rounded-xl border-2 border-slate-200 hover:border-primary hover:text-primary transition-all duration-300">
+                    <span class="material-symbols-outlined">arrow_back</span>
+                    이전 페이지
+                </button>
+            </div>
+
+            <!-- Help Section -->
+            <div class="mt-16 pt-16 border-t border-slate-200">
+                <p class="text-slate-500 mb-6">도움이 필요하신가요?</p>
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl mx-auto">
+                    <a href="index.html" class="p-6 bg-white rounded-xl border border-slate-200 hover:border-primary hover:shadow-lg transition-all duration-300 group">
+                        <span class="material-symbols-outlined text-4xl text-primary mb-3 block">grid_view</span>
+                        <h3 class="font-bold text-slate-900 mb-2 group-hover:text-primary transition-colors">서비스 보기</h3>
+                        <p class="text-sm text-slate-500">BCPS의 다양한<br />서비스를 확인하세요</p>
+                    </a>
+                    <a href="terms.html" class="p-6 bg-white rounded-xl border border-slate-200 hover:border-primary hover:shadow-lg transition-all duration-300 group">
+                        <span class="material-symbols-outlined text-4xl text-primary mb-3 block">description</span>
+                        <h3 class="font-bold text-slate-900 mb-2 group-hover:text-primary transition-colors">이용약관</h3>
+                        <p class="text-sm text-slate-500">서비스 이용 규정을<br />확인하세요</p>
+                    </a>
+                    <a href="privacy.html" class="p-6 bg-white rounded-xl border border-slate-200 hover:border-primary hover:shadow-lg transition-all duration-300 group">
+                        <span class="material-symbols-outlined text-4xl text-primary mb-3 block">shield</span>
+                        <h3 class="font-bold text-slate-900 mb-2 group-hover:text-primary transition-colors">개인정보처리방침</h3>
+                        <p class="text-sm text-slate-500">개인정보 보호 정책을<br />확인하세요</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-slate-100 py-24 px-6">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-12">
+            <div class="flex flex-col items-center md:items-start">
+                <img src="assets/green_all.png" alt="BCPS Logo" style="height: 60px; width: auto; margin-bottom: 16px;">
+                <p class="text-slate-400 text-lg font-medium">사업자 등록번호 : 675-38-01539 | 대표 : 조예근</p>
+            </div>
+            <div class="flex flex-col items-center md:items-end text-center md:text-right gap-8">
+                <nav class="flex gap-12 text-sm font-bold text-slate-500">
+                    <a class="hover:text-primary transition-colors" href="terms.html">이용약관</a>
+                    <a class="hover:text-primary transition-colors" href="privacy.html">개인정보처리방침</a>
+                </nav>
+                <p class="text-slate-400 text-sm">
+                    © 2026 BCPS. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
