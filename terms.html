@@ -11,7 +11,9 @@
         rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
         rel="stylesheet" />
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link rel="icon" href="/assets/favicon.ico" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries">
+    </script>
     <script>
         tailwind.config = {
             darkMode: "class",
@@ -33,6 +35,7 @@
         body {
             scroll-behavior: smooth;
         }
+
         .sidebar-link {
             display: block;
             padding: 0.5rem 1rem;
@@ -41,24 +44,29 @@
             border-radius: 0.375rem;
             font-size: 0.875rem;
         }
+
         .sidebar-link:hover {
             color: #82C91E;
             background-color: #f1f5f9;
         }
+
         .sidebar-link.active {
             color: #82C91E;
             font-weight: 700;
             background-color: #f1f5f9;
         }
+
         .content-section {
             margin-bottom: 3rem;
         }
+
         .content-section h2 {
             font-size: 1.5rem;
             font-weight: 700;
             margin-bottom: 1.5rem;
             color: #1e293b;
         }
+
         .content-section h3 {
             font-size: 1.125rem;
             font-weight: 600;
@@ -66,18 +74,23 @@
             margin-bottom: 1rem;
             color: #334155;
         }
-        .content-section p, .content-section li {
+
+        .content-section p,
+        .content-section li {
             line-height: 1.8;
             color: #475569;
             margin-bottom: 0.75rem;
         }
+
         .content-section ul {
             margin-left: 1.5rem;
             margin-bottom: 1rem;
         }
+
         .content-section li {
             margin-bottom: 0.5rem;
         }
+
         @media (max-width: 1024px) {
             .sidebar {
                 display: none;
@@ -118,11 +131,11 @@
 
             <!-- Main Content -->
             <main class="flex-1 max-w-3xl">
-                
+
                 <!-- 제1장 총칙 -->
                 <section id="section1" class="content-section">
                     <h2>제1장 총칙</h2>
-                    
+
                     <h3>제1조 (목적)</h3>
                     <p>본 약관은 BCPS(이하 "회사")가 제공하는 모든 서비스의 이용 조건 및 절차, 회사와 회원 간의 권리·의무 및 책임 사항을 규정함을 목적으로 합니다.</p>
 
@@ -144,7 +157,7 @@
                 <!-- 제2장 서비스 이용 -->
                 <section id="section2" class="content-section">
                     <h2>제2장 서비스 이용</h2>
-                    
+
                     <h3>제4조 (이용계약의 성립)</h3>
                     <p>이용계약은 회원이 약관에 동의하고 회원가입을 신청한 후, 회사가 이를 승낙함으로써 성립합니다.</p>
 
@@ -166,7 +179,7 @@
                 <!-- 제3장 의무 및 책임 -->
                 <section id="section3" class="content-section">
                     <h2>제3장 의무 및 책임</h2>
-                    
+
                     <h3>제7조 (회사의 의무)</h3>
                     <p>회사는 관련 법령과 본 약관이 금지하는 행위를 하지 않으며, 안정적인 서비스 제공을 위해 최선을 다합니다.</p>
 
@@ -184,7 +197,7 @@
                 <!-- 제4장 계약 해지 및 이용 제한 -->
                 <section id="section4" class="content-section">
                     <h2>제4장 콘텐츠 및 지적재산권</h2>
-                    
+
                     <h3>제9조 (콘텐츠의 저작권)</h3>
                     <ul>
                         <li>회사가 작성한 콘텐츠의 저작권은 회사에 귀속됩니다.</li>
@@ -195,7 +208,7 @@
                 <!-- 제5장 계약 해지 및 이용 제한 -->
                 <section id="section4" class="content-section">
                     <h2>제5장 계약 해지 및 이용 제한</h2>
-                    
+
                     <h3>제10조 (계약 해지)</h3>
                     <p>회원은 언제든지 서비스 내 설정 또는 고객센터를 통해 이용계약 해지를 요청할 수 있으며, 회사는 관련 법령에 따라 처리합니다.</p>
 
@@ -206,7 +219,7 @@
                 <!-- 제6장 기타 -->
                 <section id="section5" class="content-section">
                     <h2>제6장 기타</h2>
-                    
+
                     <h3>제12조 (면책)</h3>
                     <p>회사는 천재지변, 불가항력, 회원 귀책 사유로 인한 서비스 장애에 대해 책임을 지지 않습니다.</p>
 
@@ -216,8 +229,8 @@
 
                 <!-- Dates Section -->
                 <div class="mt-8 p-6 bg-slate-50 rounded-lg border border-slate-200">
-                    <p class="text-sm text-slate-600 mb-2">공고일자: 2024년 05월 20일</p>
-                    <p class="text-sm text-slate-600">시행일자: 2024년 06월 01일</p>
+                    <p class="text-sm text-slate-600 mb-2">공고일자: 2026년 01월 31일</p>
+                    <p class="text-sm text-slate-600">시행일자: 2026년 01월 31일</p>
                 </div>
 
             </main>
@@ -250,7 +263,7 @@
 
         function updateActiveLink() {
             let currentSection = '';
-            
+
             sections.forEach(section => {
                 const sectionTop = section.offsetTop;
                 const sectionHeight = section.clientHeight;
